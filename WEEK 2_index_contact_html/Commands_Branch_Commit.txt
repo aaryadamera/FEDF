@@ -1,0 +1,15 @@
+1.   Create a new branch:  git branch <branch-name>
+     Example:              git branch dev
+
+2.   Switch to a branch:   git checkout <branch-name> 
+     Example:              git checkout dev
+
+3.   create a new branch and switch to it:  git checkout -b <branch-name>
+     Example:                               git checkout -b dev1
+
+4. Commit changes with meaningful Message:  git add .
+                                            git commit -m "Message"
+   Example:                                 git add .
+                                            git commit -m "Added about section"
+
+5. 

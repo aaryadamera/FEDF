@@ -1,0 +1,4 @@
+git add .
+git checkout master
+git merge about-feature
+git merge contact-feature
