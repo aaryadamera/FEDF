@@ -1,0 +1,49 @@
+
+.App {
+  @apply bg-white rounded-2xl shadow-2xl p-8 w-full max-w-lg text-center;
+}
+
+.App h1 {
+  @apply text-4xl font-bold mb-6 text-purple-700;
+}
+
+.input-container {
+  @apply flex justify-center mb-6;
+}
+
+input {
+  @apply p-3 w-64 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400;
+  font-size: 16px;
+}
+
+button.add-btn {
+  @apply px-5 py-3 bg-purple-600 text-white font-bold rounded-r-full shadow hover:bg-purple-700 transition-colors duration-200;
+  cursor: pointer;
+}
+
+/* To-do list */
+ul {
+  @apply list-none p-0 m-0; /* Remove bullets and default padding/margin */
+}
+
+li {
+  @apply flex justify-between items-center bg-purple-50 rounded-xl p-4 mb-3 shadow hover:bg-purple-100 transition-colors duration-200;
+  font-size: 18px;
+}
+
+/* Add space between task text and delete button */
+li span {
+  @apply flex-1 text-left; /* Makes the task text take remaining space */
+  margin-right: 15px; /* Optional: extra spacing */
+}
+
+/* Completed task styling */
+li.completed {
+  @apply line-through text-gray-400;
+}
+
+/* Delete button */
+li button.delete-btn {
+  @apply bg-red-500 text-white px-3 py-1 rounded-lg shadow hover:bg-red-600 transition-colors duration-200;
+  cursor: pointer;
+}
